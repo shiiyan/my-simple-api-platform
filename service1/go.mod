@@ -3,7 +3,11 @@ module github.com/shiiyan/my-simple-api-platform/service1
 go 1.25.1
 
 require (
-	github.com/labstack/echo/v4 v4.13.4 // indirect
+	github.com/labstack/echo/v4 v4.13.4
+	github.com/shiiyan/my-simple-api-platform/pkg v0.0.0-00010101000000-000000000000
+)
+
+require (
 	github.com/labstack/gommon v0.4.2 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
@@ -14,3 +18,5 @@ require (
 	golang.org/x/sys v0.33.0 // indirect
 	golang.org/x/text v0.25.0 // indirect
 )
+
+replace github.com/shiiyan/my-simple-api-platform/pkg => ../pkg
